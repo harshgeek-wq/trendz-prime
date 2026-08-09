@@ -1,14 +1,16 @@
 import React from "react";
-import { replace, useNavigate } from "react-router-dom";
+import { Link, replace, useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import "./index.css";
 
 const Navbar = () => {
   const navigate = useNavigate();
+
   const toggleLogout = () => {
     Cookies.remove("jwtToken");
     navigate("/login", { replace: true });
   };
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -16,9 +18,15 @@ const Navbar = () => {
       </div>
 
       <ul className="nav-links">
-        <li>Home</li>
-        <li>Products</li>
-        <li>Cart</li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/cart">Cart</Link>
+        </li>
+        <li>
+          <Link to="/products">Products</Link>
+        </li>
       </ul>
 
       <button className="logout-btn" onClick={toggleLogout}>

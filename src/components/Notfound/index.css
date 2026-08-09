@@ -1,0 +1,31 @@
+.not-found-viewport {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f6;
+  padding: 20px;
+}
+.not-found-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+.not-found-card h1 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+.not-found-card p {
+  color: #666;
+  margin-bottom: 24px;
+}
+.btn-home-fallback {
+  padding: 10px 20px;
+  background: #111;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}

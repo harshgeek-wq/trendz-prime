@@ -1,0 +1,17 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.top h1 {
+  font-size: 42px;
+}
+
+.top select {
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  cursor: pointer;
+}

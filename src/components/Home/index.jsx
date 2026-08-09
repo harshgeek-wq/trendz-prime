@@ -4,9 +4,6 @@ import Cookies from "js-cookie";
 import Navbar from "../Navbar";
 
 const Home = () => {
-  if (Cookies.get("jwtToken") == undefined) {
-    return <Navigate to="/login" replace />;
-  }
   return (
     <div className="home-container">
       <Navbar />
